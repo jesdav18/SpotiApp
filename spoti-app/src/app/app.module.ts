@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { ComponentsModule } from './components/components.module';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
+import { HttpClientModule } from "@angular/common/http";
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,6 +14,7 @@ import { ROUTES } from './app.routes';
   imports: [
     BrowserModule,
     ComponentsModule,
+    HttpClientModule,
     RouterModule.forRoot(ROUTES, { useHash : true })
   ],
   providers: [],
