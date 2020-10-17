@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { NoImagePipe } from '../pipes/no-image.pipe';
 import { PipesModule } from '../pipes/pipes.module';
 import { TarjetaComponent } from './tarjeta/tarjeta.component';
+import { LoadingComponent } from './shared/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TarjetaComponent } from './tarjeta/tarjeta.component';
     HomeComponent,
     SearchComponent,
     NavbarComponent,
-    TarjetaComponent
+    TarjetaComponent,
+    LoadingComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +29,8 @@ import { TarjetaComponent } from './tarjeta/tarjeta.component';
     HomeComponent,
     SearchComponent,
     NavbarComponent,
-    TarjetaComponent
+    TarjetaComponent,
+    LoadingComponent
   ]
 })
 export class ComponentsModule { }
