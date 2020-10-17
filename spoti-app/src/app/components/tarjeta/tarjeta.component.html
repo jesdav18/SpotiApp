@@ -1,0 +1,12 @@
+<div class="card-columns m-5">
+    <div *ngFor="let elemento of dataSource" class="card">
+      <img [src]='elemento.images | noImage' class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{elemento.name}}</h5>
+        <p class="card-text" *ngIf="esCancion">
+            <span *ngFor="let artist of elemento.artists" class="badge badge-pill badge-primary">
+                {{artist.name}}
+            </span>
+        </p>
+      </div>
+</div>

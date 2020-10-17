@@ -6,6 +6,7 @@ import { ComponentsModule } from './components/components.module';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 import { HttpClientModule } from "@angular/common/http";
+import { NoImagePipe } from './pipes/no-image.pipe';
 
 @NgModule({
   declarations: [

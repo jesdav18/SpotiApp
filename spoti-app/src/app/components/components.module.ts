@@ -5,23 +5,29 @@ import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
+import { NoImagePipe } from '../pipes/no-image.pipe';
+import { PipesModule } from '../pipes/pipes.module';
+import { TarjetaComponent } from './tarjeta/tarjeta.component';
 
 @NgModule({
   declarations: [
     ArtistComponent,
     HomeComponent,
     SearchComponent,
-    NavbarComponent
+    NavbarComponent,
+    TarjetaComponent
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    PipesModule
   ],
   exports: [
     ArtistComponent,
     HomeComponent,
     SearchComponent,
-    NavbarComponent
+    NavbarComponent,
+    TarjetaComponent
   ]
 })
 export class ComponentsModule { }
