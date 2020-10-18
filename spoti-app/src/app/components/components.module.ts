@@ -9,6 +9,7 @@ import { NoImagePipe } from '../pipes/no-image.pipe';
 import { PipesModule } from '../pipes/pipes.module';
 import { TarjetaComponent } from './tarjeta/tarjeta.component';
 import { LoadingComponent } from './shared/loading/loading.component';
+import { MensajeComponent } from './shared/mensaje/mensaje.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LoadingComponent } from './shared/loading/loading.component';
     SearchComponent,
     NavbarComponent,
     TarjetaComponent,
-    LoadingComponent
+    LoadingComponent,
+    MensajeComponent
   ],
   imports: [
     CommonModule,
@@ -30,7 +32,8 @@ import { LoadingComponent } from './shared/loading/loading.component';
     SearchComponent,
     NavbarComponent,
     TarjetaComponent,
-    LoadingComponent
+    LoadingComponent,
+    MensajeComponent
   ]
 })
 export class ComponentsModule { }
