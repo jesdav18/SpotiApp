@@ -20,3 +20,33 @@
         </button>
     </div>
 </div>
+
+<div class="body">
+    <div class="row m-5">
+        <div class="col">     
+            <table class="table">
+                <thead class="thead">
+                    <tr>
+                        <th>Foto</th>
+                        <th>Album</th>
+                        <th>Canción</th>
+                        <th>Vista Previa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let album of topTracks" class="tr">
+                        <td><img [src]="album.album.images | noImage" class="img-thumb"></td>
+                        <td>{{album.album.name}}</td>
+                        <td>{{album.name}}</td>
+                        <td>
+                            <!-- <audio [src]="album.preview_url" controls></audio> -->
+                            <iframe [src]="album.album.id | domseguro : 'https://open.spotify.com/embed/album/'" width="300" height="80" 
+                                frameborder="0" allowtransparency="true" allow="encrypted-media">
+                            </iframe>             
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
