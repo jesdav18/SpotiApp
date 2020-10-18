@@ -15,6 +15,7 @@ import { NoImagePipe } from './pipes/no-image.pipe';
   imports: [
     BrowserModule,
     ComponentsModule,
+    RouterModule,
     HttpClientModule,
     RouterModule.forRoot(ROUTES, { useHash : true })
   ],
