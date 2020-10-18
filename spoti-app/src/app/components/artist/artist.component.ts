@@ -15,6 +15,8 @@ export class ArtistComponent implements OnInit {
   constructor(private router : ActivatedRoute, private spotifyService : SpotifyService) { 
     this.router.params.subscribe (params => {
       this.obtenerArtista(params['id']);
+
+      //hola david escrita por alejandra
     });
   }
 
